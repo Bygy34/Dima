@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication3.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="ru">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - Мое приложение ASP.NET</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+</head>
+
+<body>
+        <form runat="server">
+            <div class="HW1">
+                <h1>Smart house for smart people</h1>
+            </div>
+<div id="Left">
+    <asp:ContentPlaceHolder ID="ContentLeft" runat="server"></asp:ContentPlaceHolder>
+</div>
+<div id="Right">
+    <asp:ContentPlaceHolder ID="ContentRight" runat="server"></asp:ContentPlaceHolder>
+</div>
+
+        <div class="container body-content " id="Center">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+            <hr />
+
+        </div>
+            <footer>
+                <div >
+                    <p>Создано Димой</p>
+                </div>                
+            </footer>
+   </form>
+</body>
+</html>
