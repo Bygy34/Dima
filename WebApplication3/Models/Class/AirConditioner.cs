@@ -3,42 +3,21 @@ using System.ComponentModel;
 using System.Web;
 using System.Web.Services;
 using System.Web.Services.Protocols;
+using WebApplication3;
 
 namespace WebApplication3
 {
     public class AirConditioner : Temperature, ISpeedWind,IDirectionWind
     {
         private int speedWind;
-        private DirectionWind directionWind;        
-        public AirConditioner(string name, int temprich, int speedWind, DirectionWind direction, bool status) :base(name, temprich, status)
+        private DirectionWinds directionWind;        
+        public AirConditioner(string name, int temprich, int speedWind, DirectionWinds direction, bool status) :base(name, temprich, status)
         {
-            this.directionWind = direction;
+            directionWind = direction;
             this.speedWind = speedWind;
         }
 
-        public int SpeedWindUp
-        {
-            get
-            {
-                speedWind++;
-                if (speedWind == 5) { speedWind = 4; }
-                return speedWind;
-            }
-
-        }
-
-        public int SpeedWindDown
-        {
-            get
-            {
-                speedWind--;
-                if (speedWind == 0) { speedWind = 1; }
-                return speedWind;
-            }
-            
-        }
-
-        public int GetSpeedWind
+        public int SpeedWind
         {
             get
             {
@@ -46,11 +25,24 @@ namespace WebApplication3
             }
             set
             {
-                speedWind = value;
+                if (value<=0 && value>=12)
+                {
+                    speedWind = value;
+                }
             }
         }
 
-        public string GetDirection
+        public void IncreaseSpeedWind()
+        {
+            SpeedWind++;
+        }
+        public void DecreasSpeedWind()
+        {
+            SpeedWind--;
+        }
+        
+
+        public string DirectionWind
         {
             get
             {
@@ -59,32 +51,22 @@ namespace WebApplication3
             
         }
 
-        public string NextDirection
+        public void NextDirectionWind()
         {
-            get
-            {
-                if (directionWind == DirectionWind.right)
+                if (directionWind == DirectionWinds.right)
                 {
-                    directionWind = DirectionWind.top;
+                    directionWind = DirectionWinds.top;
+                }
+                else { directionWind++; }            
+        }
+
+        public void PreviousDirectionWind()
+        {
+                if (directionWind == DirectionWinds.right)
+                {
+                    directionWind = DirectionWinds.top;
                 }
                 else { directionWind++; }
-                return directionWind.ToString();
-            }
-            
-        }
-
-        public string PreviousDirection
-        {
-            get
-            {
-                if (directionWind == DirectionWind.right)
-                {
-                    directionWind = DirectionWind.top;
-                }
-                directionWind--;
-                return directionWind.ToString();
-            }
-
         }
     }
 }
