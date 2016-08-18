@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface IChanel
     {
-        string GetChanel { get; }
-        string NextChanel { get; }
-        string PreviousChanel { get; }
+        string Chanel { get; }
+        void NextChanel();
+        void PreviousChanel();
     }
 }

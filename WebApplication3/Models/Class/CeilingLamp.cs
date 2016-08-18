@@ -14,27 +14,7 @@ namespace WebApplication3
             this.brightnessLight = brightnessLight;
         }
 
-        public int BrightUpLight
-        {
-            get
-            {
-                brightnessLight += 5;
-                if (brightnessLight > 101) { brightnessLight = 100; }
-                return brightnessLight;
-            }
-        }
-
-        public int BrightDownLight
-        {
-            get
-            {
-                brightnessLight -= 5;
-                if (brightnessLight < -1) { brightnessLight = 0; }
-                return brightnessLight;
-            }
-        }
-
-        public int GetBrightLight
+        public int BrightLight
         {
             get
             {
@@ -42,8 +22,20 @@ namespace WebApplication3
             }
             set
             {
-                brightnessLight = value;
+                if (value <= 0 && value <= 100)
+                {
+                    brightnessLight = value;
+                }
             }
+        }
+
+        public void IncreaseBrightLight()
+        {
+            BrightLight+=5;
+        }
+        public void DecreasBrightLight()
+        {
+            BrightLight-=5;
         }
 
     }

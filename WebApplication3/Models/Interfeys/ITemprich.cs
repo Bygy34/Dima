@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface ITemprich
     {
-        int GetTempriche { get; set; }
-        int TempricheUp { get; }
-        int TempricheDown { get; }
+        int Temprich { get; set; }
+        void IncreaseTempriche();
+        void DecreasTempriche();
     }
 }

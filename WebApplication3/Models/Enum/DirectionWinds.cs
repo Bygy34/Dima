@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace WebApplication3
 {
-    public enum DirectionWind
+    public enum DirectionWinds
     {
         top,
         down,

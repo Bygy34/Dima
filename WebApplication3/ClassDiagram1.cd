@@ -3,7 +3,7 @@
   <Class Name="WebApplication3.TV">
     <Position X="0.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>ACABAAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Class\TV.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -18,7 +18,7 @@
   <Class Name="WebApplication3.Temperature">
     <Position X="6.25" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAACAAAEAAAAAAAIAAAQAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAQAAAAAAQAAAAAAAA=</HashCode>
       <FileName>Models\Class\Temperature.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -26,7 +26,7 @@
   <Class Name="WebApplication3.Volume">
     <Position X="1.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAACCAAAAAAAAAACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAIAAAACAAA=</HashCode>
       <FileName>Models\Class\Volume.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -34,7 +34,7 @@
   <Class Name="WebApplication3.AudioPlayer">
     <Position X="2.75" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAACAAAACAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAgAAAAACAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Class\AudioPlayer.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -42,15 +42,15 @@
   <Class Name="WebApplication3.Models.Refrigerator">
     <Position X="5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAQAAAAAAAAAAAAAAAAIAAEAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAgAAAIIAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Models\Class\Refrigerator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WebApplication3.AirConditioner">
-    <Position X="7.25" Y="7" Width="1.5" />
+    <Position X="7.5" Y="7" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAEAAICAAAAAAggAEAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAIAAEBCAAAAAAiAAAAIAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Models\Class\AirConditioner.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -58,7 +58,7 @@
   <Class Name="WebApplication3.CeilingLamp">
     <Position X="8.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAFAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Models\Class\CeilingLamp.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -66,7 +66,7 @@
   <Interface Name="WebApplication3.ITemprich" Collapsed="true">
     <Position X="15.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAACAAAEAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAIAAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\ITemprich.cs</FileName>
       <NewMemberFileName>Models\Interfeys\Itemprich.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -74,14 +74,14 @@
   <Interface Name="WebApplication3.ISpeedWind" Collapsed="true">
     <Position X="12" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <HashCode>AAAAAAAIAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\ISpeedWind.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="WebApplication3.IVolume" Collapsed="true">
     <Position X="12" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAACCAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAAIAAAAAAAAAAAAIAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\IVolume.cs</FileName>
       <NewMemberFileName>Models\Interfeys\Ivolume.cs</NewMemberFileName>
     </TypeIdentifier>
@@ -89,14 +89,14 @@
   <Interface Name="WebApplication3.IChanel" Collapsed="true">
     <Position X="13.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <HashCode>ACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\IChanel.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="WebApplication3.IBright" Collapsed="true">
     <Position X="13.75" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAEACAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Models\Interfeys\IBright.cs</FileName>
     </TypeIdentifier>
   </Interface>
@@ -110,36 +110,36 @@
   <Interface Name="WebApplication3.ITrec" Collapsed="true">
     <Position X="12" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>ABAAAAAAAAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ABAAAAAAAAAgAAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\ITrec.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="WebApplication3.IDirectionWind" Collapsed="true">
     <Position X="15.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAEAAIAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAABAAAAAAACAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Models\Interfeys\IDirectionWind.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="WebApplication3.ICeilingLamp" Collapsed="true">
     <Position X="1.25" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>AAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Models\Interfeys\ICeilingLamp.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="WebApplication3.DirectionWind" Collapsed="true">
+  <Enum Name="WebApplication3.DirectionWinds" Collapsed="true">
     <Position X="15.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAACAAAAAAAAAAgAAAAIAAAAAAAAAAAAgAA=</HashCode>
-      <FileName>Models\Enum\DirectionWind.cs</FileName>
+      <FileName>Models\Enum\DirectionWinds.cs</FileName>
     </TypeIdentifier>
   </Enum>
-  <Enum Name="WebApplication3.Chanel" Collapsed="true">
+  <Enum Name="WebApplication3.Chanels" Collapsed="true">
     <Position X="12" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>EAAAAAAAAABAAAAAAAAAACAAAAAAABCAAAAAEAAAAAA=</HashCode>
-      <FileName>Models\Enum\Chanel.cs</FileName>
+      <FileName>Models\Enum\Chanels.cs</FileName>
     </TypeIdentifier>
   </Enum>
   <Enum Name="WebApplication3.Music" Collapsed="true">

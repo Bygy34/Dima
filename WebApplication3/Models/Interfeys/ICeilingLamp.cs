@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface ICeilingLamp
     {
-        int GetBrightLight { get; set; }
-        int BrightUpLight { get; }
-        int BrightDownLight { get; }
+        int BrightLight { get; set; }
+        void IncreaseBrightLight();
+        void DecreasBrightLight();
     }
 }

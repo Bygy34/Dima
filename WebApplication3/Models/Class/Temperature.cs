@@ -8,25 +8,7 @@
             this.temperature = temperature;
         }
 
-        public int TempricheUp
-        {
-            get
-            {
-                temperature++;
-                return temperature;
-            }
-        }
-
-        public int TempricheDown
-        {
-            get
-            {
-                temperature--;
-                return temperature;
-            }
-        }
-
-        public int GetTempriche
+        public int Temprich
         {
             get
             {
@@ -34,11 +16,23 @@
             }
             set
             {
-                if (value > 0 && value < 101)
+                if (value <= 5 && value <= 27)
                 {
-                    temperature = value;
+                   temperature = value;
                 }
             }
         }
+
+
+        public void IncreaseTempriche()
+        {
+            Temprich++;
+        }
+
+        public void DecreasTempriche()
+        {
+            Temprich--;
+        }
+        
     }
 }

@@ -14,25 +14,7 @@ namespace WebApplication3.Models
             this.bright = bright;
         }
 
-        public int BrightUp
-        {
-            get
-            {
-                bright += 5;
-                return bright;
-            }
-        }
-
-        public int BrightDown
-        {
-            get
-            {
-                bright -= 5;
-                return bright;
-            }
-        }
-
-        public int GetBright
+        public int Bright
         {
             get
             {
@@ -40,8 +22,23 @@ namespace WebApplication3.Models
             }
             set
             {
-                bright = value;
+                if (value <= 0 && value <= 100)
+                {
+                    bright = value;
+                }
             }
         }
+
+        public void IncreaseBright()
+        {
+            Bright += 5;            
+        }
+
+        public void DecreasBright()
+        {
+            Bright -= 5;                
+        }
+
+        
     }
 }

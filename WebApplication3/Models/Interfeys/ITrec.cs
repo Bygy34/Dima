@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface ITrec
     {
-        string GetTrec { get; }
-        string NextTrec { get; }
-        string PreviousTrec { get; }
+        string Trec { get; }
+        void NextTrec();
+        void PreviousTrec();
     }
 }

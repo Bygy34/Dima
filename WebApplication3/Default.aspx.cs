@@ -21,9 +21,9 @@ namespace WebApplication3
             else
             {
                 TechnicalDictionary = new SortedDictionary<int, Technics>();
-                TechnicalDictionary.Add(1, new TV("TV", 10,Chanel.M1, false));
+                TechnicalDictionary.Add(1, new TV("TV", 10,Chanels.M1, false));
                 TechnicalDictionary.Add(2, new AudioPlayer("Магнитофон", 13, Music.trec1, false));
-                TechnicalDictionary.Add(3, new AirConditioner("Кондиционер", 28, 2, DirectionWind.down, false));
+                TechnicalDictionary.Add(3, new AirConditioner("Кондиционер", 28, 2, DirectionWinds.down, false));
                 TechnicalDictionary.Add(4, new Refrigerator("Холодильник", 7, false, 30));
                 TechnicalDictionary.Add(5, new CeilingLamp("Торшер", 100, false));
                 Application["Technica"] = TechnicalDictionary;
@@ -66,14 +66,14 @@ namespace WebApplication3
                     newTecnica = new AudioPlayer("Магнитофон", 13, Music.trec1, false);
                     break;
                 case 2:
-                    newTecnica = new TV("TV", 10, Chanel.inter, false);
+                    newTecnica = new TV("TV", 10, Chanels.inter, false);
                     break;
                 case 3:
-                    newTecnica = new AirConditioner("Кондиционер", 28, 2, DirectionWind.down, false);
+                    newTecnica = new AirConditioner("Кондиционер", 28, 2, DirectionWinds.down, false);
                     break;
 
                 case 4:
-                    newTecnica = new AirConditioner("Вентиляция", 28, 3, DirectionWind.down, false);
+                    newTecnica = new AirConditioner("Вентиляция", 28, 3, DirectionWinds.down, false);
                     break;
                 case 5:
                     newTecnica = new CeilingLamp("Люстра", 80, true);
@@ -115,7 +115,7 @@ namespace WebApplication3
                 { TechnicalDictionary[key].status = true; }
                 if (TechnicalDictionary[key] is CeilingLamp)
                 { TechnicalDictionary[key].status = true;
-                 ((CeilingLamp)TechnicalDictionary[key]).GetBrightLight=0;
+                 ((CeilingLamp)TechnicalDictionary[key]).BrightLight=0;
                 }
             }
             tecnicaPanel.Controls.Clear();
@@ -129,7 +129,7 @@ namespace WebApplication3
                 if (TechnicalDictionary[key] is Refrigerator)
                 { TechnicalDictionary[key].status = true; }
                 if(TechnicalDictionary[key] is CeilingLamp)
-                { ((CeilingLamp)TechnicalDictionary[key]).GetBrightLight = 25; }
+                { ((CeilingLamp)TechnicalDictionary[key]).BrightLight = 25; }
                 
             }
             tecnicaPanel.Controls.Clear();
@@ -144,11 +144,11 @@ namespace WebApplication3
                 if(TechnicalDictionary[key] is Refrigerator)
                 {
                     ((Refrigerator)TechnicalDictionary[key]).status = true;
-                    ((Refrigerator)TechnicalDictionary[key]).GetTempriche = 28;
+                    ((Refrigerator)TechnicalDictionary[key]).Temprich = 28;
                 }
                 if (TechnicalDictionary[key] is CeilingLamp)
                 {
-                    ((CeilingLamp)TechnicalDictionary[key]).GetBrightLight = 50;
+                    ((CeilingLamp)TechnicalDictionary[key]).BrightLight = 50;
                 }
                 if (TechnicalDictionary[key] is AudioPlayer)
                 {
@@ -157,8 +157,8 @@ namespace WebApplication3
                 if(TechnicalDictionary[key] is AirConditioner)
                 {
                     ((AirConditioner)TechnicalDictionary[key]).status = true;
-                    ((AirConditioner)TechnicalDictionary[key]).GetSpeedWind = 3;
-                    ((AirConditioner)TechnicalDictionary[key]).GetTempriche = 28;
+                    ((AirConditioner)TechnicalDictionary[key]).SpeedWind = 3;
+                    ((AirConditioner)TechnicalDictionary[key]).Temprich = 28;
                 }
 
             }

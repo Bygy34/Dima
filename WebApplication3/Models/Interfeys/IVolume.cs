@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface IVolume
     {
-        int GetVolume { get; }
-        int VolueUp { get; }
-        int VolueDown { get; }
+        void IncreaseVolume();
+        void DecreasVolume();
+        int Volumes { get; set; }
     }
 }

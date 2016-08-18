@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface IBright
     {
-        int GetBright { get; set; }
-        int BrightUp { get; }
-        int BrightDown { get; }
+        int Bright { get; set; }
+        void IncreaseBright();
+        void DecreasBright();
     }
 }

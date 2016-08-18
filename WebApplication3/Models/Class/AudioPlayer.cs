@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace WebApplication3
 {
-    public class AudioPlayer : Volume,ITrec
+    public class AudioPlayer : Volume, ITrec
     {
         Music directioMusic;
         public AudioPlayer(string name, int volume, Music Music, bool status) : base(name, volume, status)
@@ -14,49 +14,35 @@ namespace WebApplication3
             directioMusic = Music;
         }
 
-        public string GetTrec
-        {
-            get
-            {                
-                return directioMusic.ToString();
-            }
 
-        }
-
-        public string NextTrec
+        public string Trec
         {
             get
             {
-                if (directioMusic == Music.trec00)
-                {
-                    directioMusic = Music.trec1;
-                }
-                else if (directioMusic == Music.trec0)
-                {
-                    directioMusic = Music.trec9;
-                }
-                else { directioMusic++; }
                 return directioMusic.ToString();
             }
-            
+
         }
 
-        public string PreviousTrec
+        public void NextTrec()
         {
-            get
+            if (directioMusic == Music.trec10)
             {
-                if (directioMusic == Music.trec00)
-                {
-                    directioMusic = Music.trec1;
-                }
-                else if (directioMusic == Music.trec0)
-                {
-                    directioMusic = Music.trec9;
-                }
-                else { directioMusic--; }
-                return directioMusic.ToString();
+                directioMusic = Music.trec1;
             }
+            else { directioMusic++; }
 
         }
+
+        public void PreviousTrec()
+        {
+            if (directioMusic == Music.trec0)
+            {
+                directioMusic = Music.trec9;
+            }
+            else { directioMusic--; }
+        }
+
+
     }
 }

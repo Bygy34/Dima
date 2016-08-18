@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface ISpeedWind
     {
-        int GetSpeedWind { get; set; }
-        int SpeedWindUp { get; }
-        int SpeedWindDown { get; }
+        int SpeedWind { get; set; }
+        void IncreaseSpeedWind();
+        void DecreasSpeedWind();
     }
 }

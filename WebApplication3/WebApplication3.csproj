@@ -386,7 +386,7 @@
     <Compile Include="Models\Interfeys\IDirectionWind.cs" />
     <Compile Include="Models\Interfeys\ITecnica.cs" />
     <Compile Include="Models\Class\AudioPlayer.cs" />
-    <Compile Include="Models\Enum\Chanel.cs" />
+    <Compile Include="Models\Enum\Chanels.cs" />
     <Compile Include="Models\Class\Temperature.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
@@ -402,7 +402,7 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Enum\DirectionWind.cs" />
+    <Compile Include="Models\Enum\DirectionWinds.cs" />
     <Compile Include="Models\Class\AirConditioner.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -64,7 +64,7 @@ namespace WebApplication3.Control
                 if (TecnicaDictionary[id].status == true)
                 {
                     Controls.Add(Span("Канал : "));
-                    string a = ((IChanel)TecnicaDictionary[id]).GetChanel;
+                    string a = ((IChanel)TecnicaDictionary[id]).Chanel;
                     CLabel = Label(a);
                     CLabel.ID = "C" + id.ToString();
                     setButtonUP = new Button();
@@ -95,7 +95,7 @@ namespace WebApplication3.Control
                 if (TecnicaDictionary[id].status == true)
                 {
                     Controls.Add(Span("Яркость : "));
-                    int a = ((IBright)TecnicaDictionary[id]).GetBright;
+                    int a = ((IBright)TecnicaDictionary[id]).Bright;
                     BLabel = Label(a);
                     BLabel.ID = "B" + id.ToString();
                     setButtonUP = new Button();
@@ -126,7 +126,7 @@ namespace WebApplication3.Control
                 if (TecnicaDictionary[id].status == true)
                 {
                     Controls.Add(Span("Освещённость : "));
-                    int a = ((ICeilingLamp)TecnicaDictionary[id]).GetBrightLight;
+                    int a = ((ICeilingLamp)TecnicaDictionary[id]).BrightLight;
                     BLLabel = Label(a);
                     BLLabel.ID = "BL" + id.ToString();
                     setButtonUP = new Button();
@@ -156,7 +156,7 @@ namespace WebApplication3.Control
                 if (TecnicaDictionary[id].status == true)
                 {
                     Controls.Add(Span("Направление : "));
-                    string a = ((IDirectionWind)TecnicaDictionary[id]).GetDirection;
+                    string a = ((IDirectionWind)TecnicaDictionary[id]).DirectionWind;
                     DWLabel = Label(a);
                     DWLabel.ID = "DW" + id.ToString();
                     setButtonUP = new Button();
@@ -180,7 +180,7 @@ namespace WebApplication3.Control
             if (TecnicaDictionary[id] is ITemprich && TecnicaDictionary[id].status == true)
             {
                 Controls.Add(Span("Температура : "));
-                int a = ((ITemprich)TecnicaDictionary[id]).GetTempriche;
+                int a = ((ITemprich)TecnicaDictionary[id]).Temprich;
                 TLabel = Label(a);
                 TLabel.ID = "T" + id.ToString();
                 setButtonUP = new Button();
@@ -210,7 +210,7 @@ namespace WebApplication3.Control
                 if (TecnicaDictionary[id].status == true)
                 {
                     Controls.Add(Span("Трек : "));
-                    string a = ((ITrec)TecnicaDictionary[id]).GetTrec;
+                    string a = ((ITrec)TecnicaDictionary[id]).Trec;
                     ALabel = Label(a);
                     ALabel.ID = "A" + id.ToString();
                     setButtonUP = new Button();
@@ -234,7 +234,7 @@ namespace WebApplication3.Control
             if (TecnicaDictionary[id] is IVolume && TecnicaDictionary[id].status == true)
             {
                 Controls.Add(Span("Громкость : "));
-                int a = ((IVolume)TecnicaDictionary[id]).GetVolume;
+                int a = ((IVolume)TecnicaDictionary[id]).Volumes;
                 VLabel = Label(a);
                 VLabel.ID = "V" + id.ToString();
                 setButtonUP = new Button();
@@ -258,7 +258,7 @@ namespace WebApplication3.Control
             if (TecnicaDictionary[id] is ISpeedWind && TecnicaDictionary[id].status == true)
             {
                 Controls.Add(Span("Скорость вертра : "));
-                int a = ((ISpeedWind)TecnicaDictionary[id]).GetSpeedWind;
+                int a = ((ISpeedWind)TecnicaDictionary[id]).SpeedWind;
                 SWLabel = Label(a);
                 SWLabel.ID = "SW" + id.ToString();
                 setButtonUP = new Button();
@@ -347,122 +347,96 @@ namespace WebApplication3.Control
 
         protected void SetButtonClickVolumeUp(object sender, EventArgs e)
         {
-            int b = ((IVolume)TecnicaDictionary[id]).VolueUp;
-            VLabel = Label(b);
-            Controls.Clear();
+            ((IVolume)TecnicaDictionary[id]).IncreaseVolume();
             Initializer();
         }
+
         protected void SetButtonClickVolumeDown(object sender, EventArgs e)
         {
-            int b = ((IVolume)TecnicaDictionary[id]).VolueDown;
-            VLabel = Label(b);
-            Controls.Clear();
+            ((IVolume)TecnicaDictionary[id]).DecreasVolume();
             Initializer();
         }
 
         protected void SetButtonClickBrightUp(object sender, EventArgs e)
         {
-            int b = ((IBright)TecnicaDictionary[id]).BrightUp;
-            BLabel = Label(b);
-            Controls.Clear();
+            ((IBright)TecnicaDictionary[id]).IncreaseBright();
             Initializer();
         }
+
         protected void SetButtonClickBrightDown(object sender, EventArgs e)
         {
-            int b = ((IBright)TecnicaDictionary[id]).BrightDown;
-            BLabel = Label(b);
-            Controls.Clear();
+            ((IBright)TecnicaDictionary[id]).DecreasBright();
             Initializer();
         }
 
         protected void SetButtonClickBrightLightUp(object sender, EventArgs e)
         {
-            int b = ((ICeilingLamp)TecnicaDictionary[id]).BrightUpLight;
-            BLLabel = Label(b);
-            Controls.Clear();
+            ((ICeilingLamp)TecnicaDictionary[id]).IncreaseBrightLight();
             Initializer();
         }
+
         protected void SetButtonClickBrightLightDown(object sender, EventArgs e)
         {
-            int b = ((ICeilingLamp)TecnicaDictionary[id]).BrightDownLight;
-            BLLabel = Label(b);
-            Controls.Clear();
+            ((ICeilingLamp)TecnicaDictionary[id]).DecreasBrightLight();
             Initializer();
         }
 
         protected void SetButtonClickTemprichUp(object sender, EventArgs e)
         {
-            int b = ((ITemprich)TecnicaDictionary[id]).TempricheUp;
-            TLabel = Label(b);
-            Controls.Clear();
+            ((ITemprich)TecnicaDictionary[id]).IncreaseTempriche();
             Initializer();
         }
+
         protected void SetButtonClickTemprichDown(object sender, EventArgs e)
         {
-            int b = ((ITemprich)TecnicaDictionary[id]).TempricheDown;
-            TLabel = Label(b);
-            Controls.Clear();
+            ((ITemprich)TecnicaDictionary[id]).DecreasTempriche();
             Initializer();
         }
+
         protected void SetButtonClickSpeedWindUp(object sender, EventArgs e)
         {
-
-            int b = ((ISpeedWind)TecnicaDictionary[id]).SpeedWindUp;
-            SWLabel = Label(b);
-            Controls.Clear();
+            ((ISpeedWind)TecnicaDictionary[id]).IncreaseSpeedWind();
             Initializer();
         }
+
         protected void SetButtonClickSpeedWindDown(object sender, EventArgs e)
         {
-            int b = ((ISpeedWind)TecnicaDictionary[id]).SpeedWindDown;
-            SWLabel = Label(b);
-            Controls.Clear();
+            ((ISpeedWind)TecnicaDictionary[id]).DecreasSpeedWind();
             Initializer();
         }
 
         protected void SetButtonClickChanelNext(object sender, EventArgs e)
         {
-            string b = ((IChanel)TecnicaDictionary[id]).NextChanel;
-            CLabel = Label(b);
-            Controls.Clear();
+            ((IChanel)TecnicaDictionary[id]).NextChanel();
             Initializer();
         }
+
         protected void SetButtonClickChanelPrevious(object sender, EventArgs e)
         {
-            string b = ((IChanel)TecnicaDictionary[id]).PreviousChanel;
-                CLabel = Label(b);
-            Controls.Clear();
+            ((IChanel)TecnicaDictionary[id]).PreviousChanel();
             Initializer();
-
         }
+
         protected void SetButtonClickAudioPlayerNext(object sender, EventArgs e)
         {
-            string b = ((ITrec)TecnicaDictionary[id]).NextTrec;
-            ALabel = Label(b);
-            Controls.Clear();
+            ((ITrec)TecnicaDictionary[id]).NextTrec();
             Initializer();
         }
         protected void SetButtonClickAudioPlayerPrevious(object sender, EventArgs e)
         {
-            string b = ((ITrec)TecnicaDictionary[id]).PreviousTrec;
-            ALabel = Label(b);
-            Controls.Clear();
+            ((ITrec)TecnicaDictionary[id]).PreviousTrec();
             Initializer();
         }
 
 
         protected void SetButtonClickDirectionWindNext(object sender, EventArgs e)
         {
-            string b = ((IDirectionWind)TecnicaDictionary[id]).NextDirection;
-            DWLabel = Label(b);
-            Controls.Clear();
+            ((IDirectionWind)TecnicaDictionary[id]).NextDirectionWind();
             Initializer();
         }
         protected void SetButtonClickDirectionWindPrevious(object sender, EventArgs e)
         {
-            string b = ((IDirectionWind)TecnicaDictionary[id]).PreviousDirection;
-            DWLabel = Label(b);
-            Controls.Clear();
+            ((IDirectionWind)TecnicaDictionary[id]).PreviousDirectionWind();
             Initializer();
         }
 

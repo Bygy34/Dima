@@ -6,7 +6,7 @@ using System.ComponentModel;
 
 namespace WebApplication3
 {
-    public enum Chanel
+    public enum Chanels
     {
         estv ,
         M1,

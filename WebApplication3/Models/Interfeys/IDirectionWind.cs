@@ -8,8 +8,8 @@ namespace WebApplication3
 {
     public interface IDirectionWind
     {
-        string GetDirection { get; }
-        string NextDirection { get; }
-        string PreviousDirection { get; }
+        string DirectionWind { get; }
+        void NextDirectionWind();
+        void PreviousDirectionWind();
     }
 }

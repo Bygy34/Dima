@@ -14,32 +14,29 @@ namespace WebApplication3
             this.volume = volume;
         }
 
-        public int GetVolume
-        {
-            get
-            {
-                return volume;
-            }
-        }
 
-        public int VolueUp
+        public int Volumes
         {
             get
             {
-                volume++;
-                if (volume == 101) { volume = 100; }
                 return volume;
             }
+            set
+            {
+                if (value <= 0 && value <= 100)
+                {
+                    volume = value;
+                }
+            }
+          
         }
-
-        public int VolueDown
+        public void IncreaseVolume()
         {
-            get
-            {
-                volume--;
-                if (volume == -1) { volume = 0; }
-                return volume;
-            }
+            Volumes++;
+        }
+        public void DecreasVolume()
+        {
+            Volumes--;
         }
     }
 
