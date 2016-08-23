@@ -25,7 +25,7 @@ namespace WebApplication3
             }
             set
             {
-                if (value<=0 && value>=12)
+                if (value>=0 && value<=12)
                 {
                     speedWind = value;
                 }

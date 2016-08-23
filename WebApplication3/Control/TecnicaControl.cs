@@ -347,67 +347,79 @@ namespace WebApplication3.Control
 
         protected void SetButtonClickVolumeUp(object sender, EventArgs e)
         {
-            ((IVolume)TecnicaDictionary[id]).IncreaseVolume();
+            ((Volume)TecnicaDictionary[id]).IncreaseVolume();
+       //     ((IVolume)TecnicaDictionary[id]).IncreaseVolume();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickVolumeDown(object sender, EventArgs e)
         {
             ((IVolume)TecnicaDictionary[id]).DecreasVolume();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickBrightUp(object sender, EventArgs e)
         {
             ((IBright)TecnicaDictionary[id]).IncreaseBright();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickBrightDown(object sender, EventArgs e)
         {
             ((IBright)TecnicaDictionary[id]).DecreasBright();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickBrightLightUp(object sender, EventArgs e)
         {
             ((ICeilingLamp)TecnicaDictionary[id]).IncreaseBrightLight();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickBrightLightDown(object sender, EventArgs e)
         {
             ((ICeilingLamp)TecnicaDictionary[id]).DecreasBrightLight();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickTemprichUp(object sender, EventArgs e)
         {
             ((ITemprich)TecnicaDictionary[id]).IncreaseTempriche();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickTemprichDown(object sender, EventArgs e)
         {
             ((ITemprich)TecnicaDictionary[id]).DecreasTempriche();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickSpeedWindUp(object sender, EventArgs e)
         {
             ((ISpeedWind)TecnicaDictionary[id]).IncreaseSpeedWind();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickSpeedWindDown(object sender, EventArgs e)
         {
             ((ISpeedWind)TecnicaDictionary[id]).DecreasSpeedWind();
+            Controls.Clear();
             Initializer();
         }
 
         protected void SetButtonClickChanelNext(object sender, EventArgs e)
         {
             ((IChanel)TecnicaDictionary[id]).NextChanel();
+            Controls.Clear();
             Initializer();
         }
 
@@ -415,16 +427,19 @@ namespace WebApplication3.Control
         {
             ((IChanel)TecnicaDictionary[id]).PreviousChanel();
             Initializer();
+            Controls.Clear();
         }
 
         protected void SetButtonClickAudioPlayerNext(object sender, EventArgs e)
         {
             ((ITrec)TecnicaDictionary[id]).NextTrec();
+            Controls.Clear();
             Initializer();
         }
         protected void SetButtonClickAudioPlayerPrevious(object sender, EventArgs e)
         {
             ((ITrec)TecnicaDictionary[id]).PreviousTrec();
+            Controls.Clear();
             Initializer();
         }
 
@@ -432,6 +447,7 @@ namespace WebApplication3.Control
         protected void SetButtonClickDirectionWindNext(object sender, EventArgs e)
         {
             ((IDirectionWind)TecnicaDictionary[id]).NextDirectionWind();
+            Controls.Clear();
             Initializer();
         }
         protected void SetButtonClickDirectionWindPrevious(object sender, EventArgs e)
